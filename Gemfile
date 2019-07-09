@@ -59,3 +59,8 @@ gem 'kaminari'
 
 # デバッガ
 gem 'pry-byebug', group: :development
+
+# Heroku
+group :production do
+  gem 'pg', '>= 0.18', '< 2.0'
+end
